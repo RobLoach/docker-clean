@@ -1,4 +1,10 @@
-docker-clear
-============
+# Docker Clear
 
-Clear all Docker containers and images
+Clears all Docker containers and images.
+
+
+## Usage
+
+```
+./docker-clear.sh
+```
