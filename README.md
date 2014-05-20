@@ -8,3 +8,7 @@ Clears all Docker containers and images.
 ```
 ./docker-clear.sh
 ```
+
+## Warning
+
+This will permanently delete all saved containers and images. Use at your own risk.
