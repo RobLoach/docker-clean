@@ -1,16 +1,16 @@
 # Docker Clean
 
-Cleans all local Docker containers and images.
+> Removes all local Docker containers and images.
 
-Having all the Docker images and containers stored on your local file system can sometimes take up a lot of file space. This script will clear all of Docker's cached containers and images.
+Having all the Docker images and containers stored on your local file system can sometimes take up a lot of file space. This script will gracefully stop, and delete all of Docker's cached containers and images.
 
 
 ## Usage
 
 ``` bash
-wget https://raw.githubusercontent.com/RobLoach/docker-clean/master/docker-clean.sh
-chmod +x docker-clean.sh
-./docker-clean.sh
+curl -o docker-clean https://cdn.rawgit.com/RobLoach/docker-clean/master/docker-clean.sh
+chmod +x docker-clean
+./docker-clean
 ```
 
 ## Warning
