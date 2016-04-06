@@ -8,15 +8,22 @@
 PS=$(docker ps -a -q)
 if [ -n "${PS}" ]; then
   # Stop all running containers gracefully.
-	docker stop --time=10 $PS
+  docker stop --time=10 $PS
 
-	# Remove all of the containers, and associated volumes.
-	docker rm -f -v $PS
+  # Remove all of the containers, and associated volumes.
+  docker rm -f -v $PS
+fi
+
+# Find all lingering Docker volumes.
+VOLUMES=$(docker volume ls -q -f dangling=true)
+if [ -n "${VOLUMES}" ]; then
+  # Remove the volumes.
+  docker volume rm $VOLUMES
 fi
 
 # Get a list of all the existing Docker images.
 IMAGES=$(docker images -a -q)
 if [ -n "${IMAGES}" ]; then
   # Clear all saved container images
-	docker rmi -f $IMAGES
+  docker rmi -f $IMAGES
 fi
