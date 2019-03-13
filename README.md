@@ -8,7 +8,7 @@ Having all the Docker images and containers stored on your local file system can
 ## Usage
 
 ``` bash
-curl -o docker-clean https://cdn.rawgit.com/RobLoach/docker-clean/master/docker-clean.sh
+curl -o docker-clean https://raw.githubusercontent.com/RobLoach/docker-clean/master/docker-clean.sh
 chmod +x docker-clean
 ./docker-clean
 ```
