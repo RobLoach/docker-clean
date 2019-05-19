@@ -1,0 +1,8 @@
+{
+  "name": "docker-clean",
+  "version": "v1.0.0",
+  "description": "Docker Clean",
+  "scripts": [
+  	"docker-clean"
+  ]
+}
