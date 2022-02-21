@@ -23,4 +23,4 @@ This will permanently delete all saved containers and images. *Use at your own r
 
 ## License
 
-See [LICENSE.md](LICENSE.md) for license information.
+See [LICENSE](LICENSE) for license information.

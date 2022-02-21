@@ -2,7 +2,7 @@
 #
 # Docker Clean
 # http://github.com/robloach/docker-clean
-# License: MIT
+# License: Unlicense
 
 # Find the Docker container processes.
 PS=$(docker ps -a -q)

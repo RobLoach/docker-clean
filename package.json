@@ -1,8 +1,10 @@
 {
   "name": "docker-clean",
-  "version": "v1.0.0",
+  "version": "v2.0.0",
   "description": "Docker Clean",
-  "scripts": [
-  	"docker-clean"
-  ]
+  "private": true,
+  "scripts": {
+  	"docker-clean": "docker-clean"
+  },
+  "license": "Unlicense"
 }
